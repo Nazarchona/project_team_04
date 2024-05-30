@@ -1,4 +1,9 @@
 /* Reset styles */
+
+*{
+    box-sizing: border-box;
+}
+
 html { 
   scroll-behavior: smooth; 
 }
@@ -10,7 +15,7 @@ html {
 
 body {
   font-family: 'Impact', sans-serif;
-  background-color: #0E1823;
+  background-color: #1E2023;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -54,10 +59,32 @@ img {
 }
 
 .container {
+  min-width: 320px;
+  max-width: 360px;
   width: 100%;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: auto;
+  padding-right: auto;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 360px) {
+  .container {
+    max-width: 360px;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
 }
 
 .visually-hidden {
