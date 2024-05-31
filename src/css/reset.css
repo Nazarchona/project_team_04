@@ -87,14 +87,16 @@ h1{
   font-family: "Impact", sans-serif;
   font-size: 64px;
   letter-spacing: 1.8px;
-  line-height: 80px
+  line-height: 80px;
+  text-transform: uppercase
 }
 
 h2{
   font-family: "Impact", sans-serif;
   font-size: 52px;
   letter-spacing: 1.8px;
-  line-height: 64px
+  line-height: 64px;
+  text-transform: uppercase
 }
 
 h3{
@@ -102,6 +104,7 @@ h3{
   font-size: 32px;
   letter-spacing: 0.5px;
   line-height: 40px;
+  text-transform: uppercase
 }
 
 @media screen and (min-width: 360px) {
