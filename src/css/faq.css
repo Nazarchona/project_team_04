@@ -60,9 +60,11 @@ span {
 
 .ac .ac-trigger::after {
   content: "";
+  background-image: url(../img/faq-section/icon-up-faq.svg);
+  background-size: contain;
   text-align: center;
-  width: 15px;
-  -webkit-transform: translate(0, -50%);
+  height: 32px;
+  width: 32px;
   transform: translate(0, -50%);
   position: absolute;
   right: 10px;
@@ -71,8 +73,8 @@ span {
 
 .ac.is-active>.ac-header .ac-trigger::after {
   content: "";
+  background-image: url(../img/faq-section/icon-down-faq.svg);
 }
-
 
 .is-active {
   background-color: #14c57c33;
@@ -108,23 +110,19 @@ span {
 @media screen and (min-width: 1280px) {
 
   .section-fag {
+    background-image: url(../img/faq-section/faq-img.webp);
+    background-repeat: no-repeat;
+    background-position: calc(0% + 32px) bottom;
+    background-size: 526px 408px;
     display: flex;
     gap: 100px;
     }
+
   .faq-title {
     padding-right: 0px;
-    padding-bottom: 0px;
+    padding-bottom: 610px;
   }
-  .image-faq{
-    display: flex;
-  }
-  
-  .img-container-faq{
-    display: flex;
-    flex-direction: column;
-    gap: 240px;
-  }
-  
+
   .accordion-container-faq{
     display: flex;
     flex-direction: column;
