@@ -1,0 +1,37 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.footer-section {
+  color: #f0f0f0;
+  padding-top: 80px;
+}
+.footer-wraper-logo {
+  margin-bottom: 32px;
+}
+.footer-logo {
+  font-family: 'Impact', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #f0f0f0;
+}
+.footer-accent {
+  color: #14c57c;
+}
+.footer-link {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+.footer-item {
+  font-weight: 300;
+}
+.footer-text-end {
+  margin-bottom: 24px;
+  text-align: center;
+  font-weight: 300;
+}
