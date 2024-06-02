@@ -1,0 +1,38 @@
+.container-reviews {
+    margin: 0 auto;
+
+}
+
+.reviews .swiper-slide {
+    width: auto;
+}
+
+.reviews-header {
+    display: flex;
+}
+
+.reviews-title {
+    text-align: center;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 123%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: white;
+    margin: 0 auto 40px;
+}
+
+.swiper {
+
+
+    margin: 0 auto;
+}
+
+.swiper-slide {
+    border-radius: 16px;
+    padding: 32px;
+    width: 320px;
+    height: 296px;
+    background: #2a2d32;
+
+}
