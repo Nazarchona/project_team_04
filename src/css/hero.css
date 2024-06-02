@@ -1,83 +1,262 @@
 .hero-section {
-display: flex;
-justify-content: space-between;
-align-items: center;
-
-}
-
-.hero-container{
-padding: 112px 20px 40px 20px;
-}
-
-.hero-heading {
-color: #F0F0F0;
-padding-bottom: 40px;
-}
-        
-.hero-highlight {
-color: #14c57c;
-}
-
-.hero-order-project-btn {
-background: rgba(20, 197, 124, 0.2);
-color: #F0F0F0;
-width: 320px;
-height: 92px;
-}
-
-.hero-description-text {
-font-size: 18px;
-line-height: 1.6;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-padding-top: 40px;
-padding-bottom: 56px;
-color: #F0F0F0;
-}
-
-.hero-social-list {
-display: block;
-justify-content: center;
-gap: 20px;
-list-style: none;
-}
-
-.hero-social-link:hover {
-    color: #28a745;
-}
-
-.hero-social-info {
-    width: 100%;
-    text-align: center;
-}
-
-.hero-social-item {
-    width: 100%;
-    background-color: #E4E5E6;
     display: flex;
-    align-items: center; 
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 968px;
+    background-color: #000;
+  }
+  
+  .hero-container {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    background: #2a2d32; 
-}
-
-.hero-social-link {
+    align-items: center;
+    width: 100%;
+    background-image: url(../img/img-hero/hero-mob-1x-min.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 96px 20px 16px;
+  }
+  
+  .hero-heading {
+    color: #F0F0F0;
+    white-space: nowrap;
+    padding-bottom: 40px;
+  }
+  
+  .hero-highlight {
+    color: #14c57c;
+  }
+  
+  .hero-order-project-btn {
+    background: rgba(20, 197, 124, 0.2);
+    height: 92px;
+    width: 165px;
+    border-radius: 16px;
+    color: #F0F0F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    overflow: hidden;
+    position: relative;
+    transition: background 0.4s ease, width 0.4s ease;
+    margin-bottom: 40px;
+  }
+  
+  .hero-order-project-btn::before {
+    content: 'Order the project';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #ff69b4;
+    color: #000;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-order-project-btn:hover::before {
+    transform: translateX(0);
+    color: #F0F0F0;
+  }
+  
+  .hero-order-project-btn:hover {
+    width: 100%;
+  }
+  
+  .hero-order-project-btn span {
+    position: relative;
+    z-index: 1;
+    transition: transform 0.4s ease;
+  }
+  
+  .hero-order-project-btn:hover span {
+    transform: translateX(100%);
+  }
+  
+  .hero-order-project {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #F0F0F0;
+    text-decoration: none;
+    padding: 0 20px;
+    height: 100%;
+    line-height: 92px;
+    transition: padding 0.4s ease;
+  }
+  
+  .hero-order-project-btn.expanded {
+    width: calc(100% + 40px);
+  }
+  
+  .hero-order-project-btn.expanded span {
+    transform: translateX(calc(100% - 20px));
+  }
+  
+  .hero-order-project-btn.expanded::before {
+    width: calc(100% + 40px);
+    transform: translateX(0);
+  }
+  
+  .hero-order-project-btn.expanded:hover {
+    background: #ff69b4;
+  }
+  
+  .hero-description-text {
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #F0F0F0;
+    padding-bottom: 56px;
+    text-align: left;
+  }
+  
+  .hero-social-info {
+    width: 100%;
+  }
+  
+  .hero-social-list {
+    width: 100%;
+  }
+  
+  .hero-social-item {
+    width: 100%;
+    background-color: #2a2d32;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-social-link {
     display: block;
     text-decoration: none;
     color: #F0F0F0;
     font-size: 16px;
-    text-align: center; 
+    text-align: center;
     padding: 24px 0;
-    }
-
-/* Media */
-@media (max-width: 768px) {
-    
-    .hero-container, 
-    .photo-container {
-        max-width: 100%;
-    }
-
+    width: 100%;
+  }
+  
+  .hero-social-link:hover {
+    color: #28a745;
+  }
+  
+  /* Медіа-запити */
+  @media screen and (min-width: 320px) {
     .hero-section {
-        flex-direction: column;
+      max-width: 360px;
+      display: flex;
     }
-}
+  }
+  
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi) {
+    .hero-container {
+      background-image: url(../img/img-hero/hero-mob-2x-min.png);
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .hero-section {
+      min-width: 768px;
+      height: 1032px;
+    }
+  
+    .hero-container {
+      width: 100%;
+      height: 896px;
+      background-size: cover;
+      background-image: url(../img/img-hero/hero-tab-1x-min.png);
+    }
+  
+    .hero-heading {
+      letter-spacing: 0.01em;
+      text-transform: uppercase;
+    }
+  
+    .hero-order-project-btn {
+      height: 96px;
+      width: 261px;
+      margin-bottom: 40px;
+    }
+  
+    .hero-description-text {
+      font-size: 20px;
+      line-height: 1.6;
+      padding-bottom: 64px;
+      text-align: left;
+    }
+  
+    .hero-social-list {
+      display: flex;
+      padding: 40px 178px;
+      background-color: #2a2d32;
+    }
+  
+    .hero-social-item {
+      flex: 1;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .hero-social-link {
+      display: block;
+      text-decoration: none;
+      color: #F0F0F0;
+      font-size: 16px;
+      text-align: center;
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .hero-container {
+      background-image: url(../img/img-hero/hero-tab-2x-min.png);
+    }
+  }
+  
+  @media screen and (min-width: 1280px) {
+    .hero-section {
+      min-width: 1280px;
+      height: 908px;
+    }
+  
+    .hero-container {
+      height: 772px;
+      background-image: url(../img/img-hero/hero-des-1x-min.png);
+    }
+  
+    .hero-heading {
+      color: #F0F0F0;
+      margin-bottom: 80px;
+      padding: 0;
+    }
+  
+    .hero-order-project-btn {
+      margin-bottom: 116px;
+    }
+  
+    .hero-description-text {
+      padding-bottom: 116px;
+    }
+  }
+  
+  @media screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-width: 1280px) and (min-resolution: 192dpi) {
+    .hero-container {
+      background-image: url(../img/img-hero/hero-des-2x-min.png);
+    }
+  }
+  
