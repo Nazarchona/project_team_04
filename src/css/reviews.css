@@ -1,3 +1,20 @@
+.reviews {
+    margin-top: 80px;
+}
+
+@media screen and (min-width: 768px) {
+    .reviews {
+        margin-top: 124px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .reviews {
+        margin-top: 164px;
+    }
+}
+
+
 .reviews-title {
     font-family: Impact;
     text-align: center;
@@ -12,7 +29,6 @@
 
 @media screen and (min-width: 768px) {
     .reviews-title {
-        font-family: second-family;
         font-size: 108px;
         line-height: 1.15;
         letter-spacing: 0.02em;
@@ -37,7 +53,7 @@
     }
 }
 
-@media screen and (min-width: 1288px) {
+@media screen and (min-width: 1280px) {
     .swiper {
         height: 296px;
     }
@@ -54,7 +70,7 @@
     }
 }
 
-@media screen and (min-width: 1288px) {
+@media screen and (min-width: 1280px) {
     .reviews .swiper-wrapper {
         width: 592px;
     }
