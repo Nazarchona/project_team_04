@@ -3,33 +3,20 @@
     <div class="reviews-header">
       <h1 class="reviews-title">reviews</h1>
     </div>
-
     <div class="swiper">
-      <ul class="swiper-wrapper">
-        <!-- <li class="swiper-slide" id="review">
-          <p class="main-text-with-opacity">${review.review}</p>
-          <div class="swiper-user">
-            <img
-              src="${review.avatar_url}"
-              alt="Reviewer"
-              class="reviewer-image"
-              width="40"
-              height="40"
-              loading="lazy"
-            />
-            <p class="reviewer-name header-5">${review.author}</p>
-          </div>
-        </li> -->
-      </ul>
-      <div class="swiper-button-prev" id="prev">
-        <cvg class="icon">
-          <use href="/src/img/svg/icons.svg#icon-left_arrow"></use>
-        </cvg>
-      </div>
-      <div class="swiper-button-next" id="next">
-        <cvg class="icon">
-          <use href="/src/img/svg/icons.svg#icon-right_arrow"></use>
-        </cvg>
+      <ul class="swiper-wrapper" id="reviews-list"></ul>
+
+      <div class="swiper-prev-next">
+        <div class="swiper-button-prev" id="prev">
+          <svg class="reviews-icon">
+            <use href="../img/svg/icons.svg#icon-left_arrow"></use>
+          </svg>
+        </div>
+        <div class="swiper-button-next" id="next">
+          <svg class="reviews-icon">
+            <use href="../img/svg/icons.svg#icon-right_arrow"></use>
+          </svg>
+        </div>
       </div>
     </div>
   </div>
