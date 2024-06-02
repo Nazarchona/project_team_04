@@ -1,15 +1,134 @@
 @import 'accordion-js/dist/accordion.min.css';
+
+.section-fag {
+  margin-bottom: 80px;
+}
 .faq-title {
-  font-family: Impact;
+  font-family: 'Impact', sans-serif;
   font-size: 52px;
   font-weight: 400;
-  line-height: 64px;
+  line-height: 1.2;
   letter-spacing: 1.7999999523162842px;
-  text-align: left;
   text-transform: uppercase;
   color: #f0f0f0;
+  padding-bottom: 40px;
 }
 
 span {
   color: #14c57c;
+}
+
+.image-faq {
+  display: none;
+}
+
+.faq-item {
+  border: 1px solid var(--Opacity_20);
+  border-bottom: 1px solid white;
+  background-color: var(--Background);
+  padding: 28px 24px;
+}
+
+.ac {
+  margin-top: 0px;
+  box-sizing: border-box;
+}
+.ac .ac-trigger {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: white;
+  text-transform: uppercase;
+  text-align: left;
+  width: 100%;
+  padding: 0px 72px 0px 0px;
+  display: block;
+  cursor: pointer;
+  background-color: transparent;
+  transition: color 0.25s ease;
+  position: relative;
+  text-decoration: none;
+  margin: 0;
+  border: 0;
+}
+
+.ac .ac-trigger:focus {
+  color: white;
+}
+
+.ac .ac-trigger::after {
+  content: "";
+  text-align: center;
+  width: 15px;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  position: absolute;
+  right: 10px;
+  top: 50%;
+}
+
+.ac.is-active>.ac-header .ac-trigger::after {
+  content: "";
+}
+
+
+.is-active {
+  background-color: #14c57c33;
+  border: none;
+  border-radius: 16px;
+}
+.ac .ac-panel .ac-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: white;
+  padding: 24px 0px 0px 0px;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .faq-title {
+    font-size: 108px;
+    padding-right: 112px;
+    padding-bottom: 60px;
+  }
+
+  .faq-item {
+    border-bottom: 1px solid rgba(100, 95, 95, 0.5);
+  }
+  .ac .ac-trigger {
+    padding: 0px 80px 0px 0px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+
+  .section-fag {
+    display: flex;
+    gap: 100px;
+    }
+  .faq-title {
+    padding-right: 0px;
+    padding-bottom: 0px;
+  }
+  .image-faq{
+    display: flex;
+  }
+  
+  .img-container-faq{
+    display: flex;
+    flex-direction: column;
+    gap: 240px;
+  }
+  
+  .accordion-container-faq{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
 }
