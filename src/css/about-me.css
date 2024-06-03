@@ -9,16 +9,12 @@
 
 .about-me {
     background-color: #2A2D32;
-    background-size: 336px 252px;
-    background-image: url(../img/about-me/tabletbg-min.png);
-    background-repeat: no-repeat;
-    background-position: bottom 220px right 0px;
     margin-bottom: 40px;
 
 }
 
 .about-me-title{
-    display: flex;
+    margin-bottom: 40px;
 
 }
 .about-me-main-title {
@@ -44,7 +40,6 @@
     color: var(--white);
 }
 .about-me-second-title {
-    font-family: var(--font-family);
     font-weight: 500;
     font-size: 32px;
     line-height: 125%;
@@ -54,7 +49,6 @@
     margin-bottom: 32px;
 }
 .about-me-p-text {
-    font-family: var(--font-family);
     font-weight: 300;
     font-size: 16px;
     line-height: 150%;
@@ -87,6 +81,7 @@
     margin-bottom: 12px;
 }
 .about-me-role-container {
+    margin-top: 40px;
 
 }
 
@@ -102,14 +97,51 @@ ul {
   }
 
   @media screen and (min-width: 360px){
+
     }
 
 
   @media screen and (min-width: 768px) {
+    .about-me{
+        background-size: 336px 252px;
+        background-image: url(../img/about-me/tabletbg-min.png);
+        background-repeat: no-repeat;
+        background-position: bottom 220px right 0px;
+    }
+
+    .about-me-main-title{
+        display: flex;
+        font-family: "Impact", sans-serif;
+        font-weight: 400;
+        font-size: 108px;
+        line-height: 115%;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        text-align: right;
+        color: var(--white);
+    }
 
   }
 
   @media screen and (min-width: 1280px){
+    .about-me{
+        background-size: 384px 288px;
+        background-image: url(../img/about-me/tabletbg-min.png);
+        background-repeat: no-repeat;
+        background-position: bottom 220px right 0px;
+    }
+
+    .about-me-main-title{
+        display: flex;
+        font-family: "Impact", sans-serif;
+        font-weight: 400;
+        font-size: 136px;
+        line-height: 156px;
+        letter-spacing: 1.8px;
+        text-transform: uppercase;
+        text-align: right;
+        color: var(--white);
+    }
 
   }
 
