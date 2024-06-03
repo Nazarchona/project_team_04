@@ -96,6 +96,7 @@
 }
 
 .main-text-with-opacity {
+  overflow: auto;
   font-weight: 300;
   font-size: 16px;
   line-height: 150%;
