@@ -1,17 +1,29 @@
-const menuBtnEl = document.querySelector('.mobile-open-btn');
-const menuBackdrop = document.querySelector('.mobile-menu-container');
-const closeModalBtnEl = document.querySelector('.mobile-menu-close-btn');
-const navigationListEl = document.querySelector('.mobile-menu-nav-list');
+document.addEventListener('DOMContentLoaded', () => {
+  const openBtn = document.querySelector('.mobile-open-btn');
+  const closeBtn = document.querySelector('.mobile-menu-close-btn');
+  const mobileMenuContainer = document.querySelector('.mobile-menu-container');
+  const menuLinks = document.querySelectorAll('.mobile-menu-nav-link');
 
-function toggleModal() {
-  menuBackdrop.classList.toggle('is-open');
-}
-
-menuBtnEl.addEventListener('click', toggleModal);
-closeModalBtnEl.addEventListener('click', toggleModal);
-
-navigationListEl.addEventListener('click', (event) => {
-  if (event.target.classList.contains('mobile-menu-nav-link')) {
-    toggleModal();
+  function openMobileMenu() {
+    mobileMenuContainer.classList.remove('close');
+    mobileMenuContainer.classList.add('open');
   }
+
+  // Закриття мобільного меню
+  function closeMobileMenu() {
+    mobileMenuContainer.classList.remove('open');
+    mobileMenuContainer.classList.add('close');
+  }
+
+  // Обробники подій для кнопок
+  openBtn.addEventListener('click', openMobileMenu);
+  closeBtn.addEventListener('click', closeMobileMenu);
+
+  // Обробники подій для посилань у меню
+  menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      closeMobileMenu();
+    });
+  });
 });
+
