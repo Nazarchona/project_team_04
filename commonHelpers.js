@@ -26,7 +26,7 @@ import{A as S,S as q,i as M}from"./assets/vendor-39ba868b.js";(function(){const 
             <a class='proj-descr-link' href='${B}' target="_blank">
               visit
               <svg class='proj-link-svg' width='24' height='24'>
-                <use href="../img/svg/icons.svg#icon-Visit_arrow"></use>
+                <use href="./img/svg/icons.svg#icon-Visit_arrow"></use>
               </svg>
             </a>
           </div>
