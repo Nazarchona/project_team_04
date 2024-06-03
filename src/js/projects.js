@@ -1,31 +1,31 @@
-import './img/img_projects/02_green/green_desc@1x.jpg';
-import './img/img_projects/02_green/green_desc@2x.jpg';
-import './img/img_projects/02_green/green_mob@1x.jpg';
-import './img/img_projects/02_green/green_mob@2x.jpg';
-import './img/img_projects/02_green/green_tab@1x.jpg';
-import './img/img_projects/02_green/green_tab@2x.jpg';
-import './img/svg/icons.svg#icon-Visit_arrow';
+import '../img/img_projects/02_green/green_desc@1x.jpg';
+import '../img/img_projects/02_green/green_desc@2x.jpg';
+import '../img/img_projects/02_green/green_mob@1x.jpg';
+import '../img/img_projects/02_green/green_mob@2x.jpg';
+import '../img/img_projects/02_green/green_tab@1x.jpg';
+import '../img/img_projects/02_green/green_tab@2x.jpg';
+import '../img/svg/icons.svg#icon-Visit_arrow';
 
 const images = [
   {
     id: 1,
     title: 'wallet webservice',
-    mob_1x: './img/img_projects/01_wallet/wallet_mob@1x.jpg',
-    mob_2x: './img/img_projects/01_wallet/wallet_mob@2x.jpg',
-    tab_1x: './img/img_projects/01_wallet/wallet_tab@1x.jpg',
-    tab_2x: './img/img_projects/01_wallet/wallet_tab@2x.jpg',
-    desc_1x: './img/img_projects/01_wallet/wallet_desc@1x.jpg',
-    desc_2x: './img/img_projects/01_wallet/wallet_desc@2x.jpg',
+    mob_1x: '../img/img_projects/01_wallet/wallet_mob@1x.jpg',
+    mob_2x: '../img/img_projects/01_wallet/wallet_mob@2x.jpg',
+    tab_1x: '../img/img_projects/01_wallet/wallet_tab@1x.jpg',
+    tab_2x: '../img/img_projects/01_wallet/wallet_tab@2x.jpg',
+    desc_1x: '../img/img_projects/01_wallet/wallet_desc@1x.jpg',
+    desc_2x: '../img/img_projects/01_wallet/wallet_desc@2x.jpg',
   },
   {
     id: 2,
     title: 'green harvest webservice',
-    mob_1x: './img/img_projects/02_green/green_mob@1x.jpg',
-    mob_2x: './img/img_projects/02_green/green_mob@2x.jpg',
-    tab_1x: './img/img_projects/02_green/green_tab@1x.jpg',
-    tab_2x: './img/img_projects/02_green/green_tab@2x.jpg',
-    desc_1x: './img/img_projects/02_green/green_desc@1x.jpg',
-    desc_2x: './img/img_projects/02_green/green_desc@2x.jpg',
+    mob_1x: '../img/img_projects/02_green/green_mob@1x.jpg',
+    mob_2x: '../img/img_projects/02_green/green_mob@2x.jpg',
+    tab_1x: '../img/img_projects/02_green/green_tab@1x.jpg',
+    tab_2x: '../img/img_projects/02_green/green_tab@2x.jpg',
+    desc_1x: '../img/img_projects/02_green/green_desc@1x.jpg',
+    desc_2x: '../img/img_projects/02_green/green_desc@2x.jpg',
   },
   {
     id: 3,
