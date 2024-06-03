@@ -1,32 +1,31 @@
-import '../img/img_projects/02_green/green_desc@1x.jpg';
-import '../img/img_projects/02_green/green_desc@2x.jpg';
-import '../img/img_projects/02_green/green_mob@1x.jpg';
-import '../img/img_projects/02_green/green_mob@2x.jpg';
-import '../img/img_projects/02_green/green_tab@1x.jpg';
-import '../img/img_projects/02_green/green_tab@2x.jpg';
+import './img/img_projects/02_green/green_desc@1x.jpg';
+import './img/img_projects/02_green/green_desc@2x.jpg';
+import './img/img_projects/02_green/green_mob@1x.jpg';
+import './img/img_projects/02_green/green_mob@2x.jpg';
+import './img/img_projects/02_green/green_tab@1x.jpg';
+import './img/img_projects/02_green/green_tab@2x.jpg';
+import './img/svg/icons.svg#icon-Visit_arrow';
 
 const images = [
   {
     id: 1,
     title: 'wallet webservice',
-    mob_1x: '../img/img_projects/01_wallet/wallet_mob@1x.jpg',
-    mob_2x: '../img/img_projects/01_wallet/wallet_mob@2x.jpg',
-    tab_1x: '../img/img_projects/01_wallet/wallet_tab@1x.jpg',
-    tab_2x: '../img/img_projects/01_wallet/wallet_tab@2x.jpg',
-    desc_1x:
-      'https://github.com/Nazarchona/project_team_04/blob/main/src/img/img_projects/01_wallet/wallet_desc%401x.jpg',
-    desc_2x:
-      'https://github.com/Nazarchona/project_team_04/blob/main/src/img/img_projects/01_wallet/wallet_desc%402x.jpg',
+    mob_1x: './img/img_projects/01_wallet/wallet_mob@1x.jpg',
+    mob_2x: './img/img_projects/01_wallet/wallet_mob@2x.jpg',
+    tab_1x: './img/img_projects/01_wallet/wallet_tab@1x.jpg',
+    tab_2x: './img/img_projects/01_wallet/wallet_tab@2x.jpg',
+    desc_1x: './img/img_projects/01_wallet/wallet_desc@1x.jpg',
+    desc_2x: './img/img_projects/01_wallet/wallet_desc@2x.jpg',
   },
   {
     id: 2,
     title: 'green harvest webservice',
-    mob_1x: '../img/img_projects/02_green/green_mob@1x.jpg',
-    mob_2x: '../img/img_projects/02_green/green_mob@2x.jpg',
-    tab_1x: '../img/img_projects/02_green/green_tab@1x.jpg',
-    tab_2x: '../img/img_projects/02_green/green_tab@2x.jpg',
-    desc_1x: '../img/img_projects/02_green/green_desc@1x.jpg',
-    desc_2x: '../img/img_projects/02_green/green_desc@2x.jpg',
+    mob_1x: './img/img_projects/02_green/green_mob@1x.jpg',
+    mob_2x: './img/img_projects/02_green/green_mob@2x.jpg',
+    tab_1x: './img/img_projects/02_green/green_tab@1x.jpg',
+    tab_2x: './img/img_projects/02_green/green_tab@2x.jpg',
+    desc_1x: './img/img_projects/02_green/green_desc@1x.jpg',
+    desc_2x: './img/img_projects/02_green/green_desc@2x.jpg',
   },
   {
     id: 3,
@@ -164,7 +163,7 @@ function createMarkup(images, minId, maxId) {
             <a class='proj-descr-link' href='${projectLink}' target="_blank">
               visit
               <svg class='proj-link-svg' width='24' height='24'>
-                <use href="../img/svg/icons.svg#icon-Visit_arrow"></use>
+                <use href="./img/svg/icons.svg#icon-Visit_arrow"></use>
               </svg>
             </a>
           </div>
