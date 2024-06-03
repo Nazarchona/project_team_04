@@ -1,0 +1,138 @@
+:root{
+    --white:#F0F0F0;
+    --lightgreen: #14C57C;
+    --black: #1E2023;
+    --grey: #2A2D32;
+    --darkgreen: #204136;
+}
+
+
+.about-me {
+    background-color: #2A2D32;
+    background-size: 336px 252px;
+    background-image: url(../img/about-me/tabletbg-min.png);
+    background-repeat: no-repeat;
+    background-position: bottom 220px right 0px;
+    margin-bottom: 40px;
+
+}
+
+.about-me-title{
+    display: flex;
+
+}
+.about-me-main-title {
+    padding: 0px 20px;
+    text-transform: uppercase;
+    color: var(--white);
+    margin-bottom: 40px;
+}
+
+.about-me-text-decoration {
+    color: #14C57C;
+}
+.about-me-img-block{
+    display: block;
+    padding: 0px 20px;
+    border-radius: 16px;
+    width: 320px;
+    height: 374px;
+    margin-bottom: 32px;
+}
+.about-me-information {
+    padding: 0px 20px;
+    color: var(--white);
+}
+.about-me-second-title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 125%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--white);
+    margin-bottom: 32px;
+}
+.about-me-p-text {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    color: var(--white);
+    margin-bottom: 32px;
+}
+.about-me-my-picture {
+    border-radius: 16px;
+    width: 320px;
+    height: 374px;
+}
+.about-me-education {
+
+    padding: 0px 20px;
+    color: #F0F0F0;
+}   
+.about-me-educ-container {
+
+
+
+}
+.about-me-third-title {
+    margin-bottom: 32px;
+}
+.about-me-list {
+
+}
+.about-me-info-list {
+    margin-bottom: 12px;
+}
+.about-me-role-container {
+
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li::before {
+    content: "• ";
+    color: #14C57C; /* Bullet point color */
+    font-weight: bold;
+  }
+
+  @media screen and (min-width: 360px){
+    }
+
+
+  @media screen and (min-width: 768px) {
+
+  }
+
+  @media screen and (min-width: 1280px){
+
+  }
+
+  @media screen and (min-resolution: 192dpi) and (min-width: 1280px),
+screen and (min-resolution: 2dppx) and (min-width: 1280px),
+screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
+  .about-me {
+    background-image: url(../img/about-me/desktopbgx2-min.png);
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width: 1279px),
+screen and (min-resolution: 2dppx) and (max-width: 1279px),
+screen and (min-device-pixel-ratio: 2) and (max-width: 1279px) {
+    .about-me {
+    background-image: url(../img/about-me/tabletbgx2-min.png);
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px),
+screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+    .about-me {
+    background-image: url(../img/about-me/tabletbgx2-min.png);
+  }
+}
