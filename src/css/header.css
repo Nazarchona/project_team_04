@@ -6,6 +6,10 @@
   height: 64px;
   padding: 0 20px;
   position: relative;
+  width: 100vw;
+  padding: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .logo-text {
@@ -51,6 +55,9 @@
   transition: transform 250ms linear;
   padding: 20px;
   background-color: #1E2023;
+  padding: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mobile-menu-header {
@@ -192,6 +199,6 @@
 
 @media screen and (min-width: 1280px) {
   .header-container {
-    min-width: 1280px;
+    max-width: 100%;
   }
 }
