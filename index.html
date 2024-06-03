@@ -13,7 +13,7 @@
     <script type="module" crossorigin src="/project_team_04/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/project_team_04/assets/vendor-39ba868b.js">
     <link rel="stylesheet" href="/project_team_04/assets/vendor-827d51bf.css">
-    <link rel="stylesheet" href="/project_team_04/assets/index-514b2776.css">
+    <link rel="stylesheet" href="/project_team_04/assets/index-245ca7f3.css">
   </head>
   <body>
     <header class="header">
@@ -68,18 +68,35 @@
   
     <main>
       <section class="hero-section">
-    <div class="hero-container">
-      <h1 class="hero-heading">
-        HELLO, I AM<br>
-        <span class="hero-highlight">FULLSTACK</span><br>
-        <span class="hero-highlight">DEVELOPER</span>
-      </h1>
-      <a class="hero-order-project" type="button" onclick="orderProject()"></a>
-      <button class="hero-order-project-btn"></button>
+  <div class="hero-container">
+    <h1 class="hero-heading">
+      HELLO, I AM<br>
+      <span class="hero-highlight">FULLSTACK</span><br>
+      <span class="hero-highlight">DEVELOPER</span>
+    </h1>
+    <picture class="hero-image">
+      <source srcset=".img/img-hero/hero-des-1x-min.png, .img/img-hero/hero-des-2x-min.png" type="image/jpeg" media="(min-width: 1280px)">
+      <img class="hero-img" src="../img/img-hero/hero-photo-des-1x-min.jpg" alt="photo of author">
+    </picture>
+
+    <div class="container-btn-hero">
+      <button id="moveButton"></button>
+      <div id="text-btn-hero">
+        <span class="arrow">
+          <svg class="arrow-icon" width="30" height="16">
+            <use href="../img/svg/icons.svg#icon-Arrow"></use>
+          </svg>
+        </span>
+        <a class="button-text" href="#work-togezer">ORDER THE PROJECT</a>
+      </div>
+    </div>
+
+    <div class="hero-text-container">
       <p class="hero-description-text">
         I work with people all over the world to create <span class="hero-highlight">impressive</span> and <span class="hero-highlight">functional websites</span> that reflect each client's unique personality.
       </p>
     </div>
+
     <div class="hero-social-info">
       <ul class="hero-social-list">
         <li class="hero-social-item">
@@ -96,7 +113,9 @@
         </li>
       </ul>
     </div>
-  </section>
+
+  </div>
+</section>
   
       
       
