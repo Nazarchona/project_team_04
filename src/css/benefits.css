@@ -78,7 +78,7 @@
 
 @media screen and (min-width: 1280px) {
   .benefits-section {
-    background-image: url(./img/benefits-img/benefits-decor.png);
+    background-image: url(../img/benefits-img/benefits-decor.png);
     background-size: 526px 408px;
     background-repeat: no-repeat;
     background-position: calc(100% - 20px) 32px;
