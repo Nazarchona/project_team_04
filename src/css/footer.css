@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
+  padding-top: 40px;
 }
 .footer-logo {
   font-family: 'Impact', sans-serif;
@@ -35,10 +36,12 @@
   margin: 0 auto 24px;
 }
 @media screen and (min-width: 768px) {
-  .footer-section {
+  .footer-wraper {
     border-top: 1px solid #e4e5e6;
-    padding-top: 40px;
     margin-bottom: 24px;
+  }
+  .footer-section {
+    padding-top: 124px;
   }
   .footer-link {
     flex-direction: row;
@@ -52,6 +55,9 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .footer-section {
+    padding-top: 164px;
+  }
   .footer-wraper {
     flex-direction: row;
     justify-content: space-between;
