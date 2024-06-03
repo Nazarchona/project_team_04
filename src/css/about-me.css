@@ -8,8 +8,7 @@
 
 
 .about-me {
-    background-color: #2A2D32;
-    margin-bottom: 40px;
+    background-color: #1E2023;
 
 }
 
@@ -18,7 +17,6 @@
 
 }
 .about-me-main-title {
-    padding: 0px 20px;
     text-transform: uppercase;
     color: var(--white);
     margin-bottom: 40px;
@@ -36,7 +34,6 @@
     margin-bottom: 32px;
 }
 .about-me-information {
-    padding: 0px 20px;
     color: var(--white);
 }
 .about-me-second-title {
@@ -62,14 +59,11 @@
     height: 374px;
 }
 .about-me-education {
-
-    padding: 0px 20px;
     color: #F0F0F0;
+
 }   
 .about-me-educ-container {
-
-
-
+    color: #F0F0F0;
 }
 .about-me-third-title {
     margin-bottom: 32px;
@@ -79,10 +73,6 @@
 }
 .about-me-info-list {
     margin-bottom: 12px;
-}
-.about-me-role-container {
-    margin-top: 40px;
-
 }
 
 ul {
@@ -106,7 +96,7 @@ ul {
         background-size: 336px 252px;
         background-image: url(../img/about-me/tabletbg-min.png);
         background-repeat: no-repeat;
-        background-position: bottom 220px right 0px;
+        background-position: bottom 188px right 32px;
     }
 
     .about-me-main-title{
@@ -121,14 +111,48 @@ ul {
         color: var(--white);
     }
 
+    .about-me-wrap{
+        display: flex;
+        margin-bottom: 60px;
+        
+    }
+
+    .about-me-information{
+        width: 336px;
+    }
+
+    .about-me-img-block{
+        margin-top: auto;
+    }
+
+    .about-me-education{
+        display: flex;
+
+        width: 704px;
+    }
+
+    .about-me-list{
+        gap: 12px;
+    }
+
+    .about-me-educ-container{
+        box-sizing: border-box;
+        width: 336px;
+        justify-content: space-between;
+    }
+
+    .about-me-list{
+        display: flex;
+        flex-direction: column;
+    }
+
   }
 
   @media screen and (min-width: 1280px){
     .about-me{
-        background-size: 384px 288px;
         background-image: url(../img/about-me/tabletbg-min.png);
         background-repeat: no-repeat;
-        background-position: bottom 220px right 0px;
+        background-position: bottom 220px right 32px;
     }
 
     .about-me-main-title{
@@ -143,6 +167,34 @@ ul {
         color: var(--white);
     }
 
+    .about-me-information{
+        display: flex;
+        flex-direction: column;
+        width: 488px;
+    }
+
+    .about-me-img-block{
+        margin-top: auto;
+        margin-left: 225px;
+        margin-right: auto;
+    }
+
+    .about-me-education{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-me-education{
+        display: flex;
+        justify-content: space-between;
+    }
+    .about-me-list{
+        gap: 16px;
+    }
+
+    .about-me-wrap{
+        margin-bottom: 80px;
+    }
   }
 
   @media screen and (min-resolution: 192dpi) and (min-width: 1280px),
