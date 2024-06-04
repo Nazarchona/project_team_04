@@ -1,34 +1,29 @@
-(() => {
-    const mobileMenu = document.querySelector('.mobile-menu-container');
-    const openMenuBtn = document.querySelector('.mobile-open-btn');
-    const closeMenuBtn = document.querySelector('.mobile-menu-close-btn');
-    const menuLinks = document.querySelectorAll('.mobile-menu-nav-link');
-    const orderProjectBtn = document.querySelector('.mobile-order-project-btn');
-  
-    const toggleMenu = () => {
-      const isMenuOpen = openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
-      openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
-      mobileMenu.classList.toggle('is-open');
-      if (!isMenuOpen) {
-        document.body.style.overflow = 'hidden'; 
-      } else {
-        document.body.style.overflow = ''; 
-      }
-    };
-  
-    menuLinks.forEach(menuLink => {
-      menuLink.addEventListener('click', toggleMenu);
+document.addEventListener('DOMContentLoaded', () => {
+  const openBtn = document.querySelector('.mobile-open-btn');
+  const closeBtn = document.querySelector('.mobile-menu-close-btn');
+  const mobileMenuContainer = document.querySelector('.mobile-menu-container');
+  const menuLinks = document.querySelectorAll('.mobile-menu-nav-link');
+
+  function openMobileMenu() {
+    mobileMenuContainer.classList.remove('close');
+    mobileMenuContainer.classList.add('open');
+  }
+
+  // Закриття мобільного меню
+  function closeMobileMenu() {
+    mobileMenuContainer.classList.remove('open');
+    mobileMenuContainer.classList.add('close');
+  }
+
+  // Обробники подій для кнопок
+  openBtn.addEventListener('click', openMobileMenu);
+  closeBtn.addEventListener('click', closeMobileMenu);
+
+  // Обробники подій для посилань у меню
+  menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      closeMobileMenu();
     });
-  
-    orderProjectBtn.addEventListener('click', toggleMenu);
-  
-    openMenuBtn.addEventListener('click', toggleMenu);
-    closeMenuBtn.addEventListener('click', toggleMenu);
-  
-    window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
-      if (!e.matches) return;
-      mobileMenu.classList.remove('is-open');
-      openMenuBtn.setAttribute('aria-expanded', false);
-      document.body.style.overflow = ''; 
-    });
-  })();
+  });
+});
+
