@@ -46,7 +46,7 @@
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.03em;
-  color: var(--white);
+  color: white;
   margin-bottom: 32px;
 }
 .about-me-my-picture {
@@ -59,6 +59,7 @@
   color: #f0f0f0;
 }
 .about-me-third-title {
+  font-weight: 500;
   margin-bottom: 32px;
 }
 
@@ -77,9 +78,8 @@
   font-weight: bold;
 }
 
-
 @media screen and (min-width: 360px) {
-  .about-me{
+  .about-me {
     background-image: none;
   }
 }
@@ -139,8 +139,8 @@
     flex-direction: column;
   }
 
-  .about-me-role-container{
-  padding: 0 32px;
+  .about-me-role-container {
+    padding: 0 32px;
   }
 }
 
@@ -204,11 +204,9 @@
 @media screen and (min-resolution: 192dpi) and (max-width: 1279px),
   screen and (min-resolution: 2dppx) and (max-width: 1279px),
   screen and (min-device-pixel-ratio: 2) and (max-width: 1279px) {
-
 }
 
 @media screen and (min-resolution: 192dpi) and (max-width: 767px),
   screen and (min-resolution: 2dppx) and (max-width: 767px),
   screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
-
 }
