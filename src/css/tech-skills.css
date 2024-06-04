@@ -1,0 +1,60 @@
+/* Section tech skills */
+
+.tech-skills {
+    white-space: nowrap;
+    margin-top: 164px;
+    /* margin: 0 auto; */
+  }
+  
+  .skills-list {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    padding: 32px 0;
+    margin: 0;
+    list-style-type: none;
+    background-color: #214136;
+    padding: absolute;
+    text-transform: uppercase;
+    overflow: hidden;
+    justify-content: center;
+  }
+  
+  .upper-skills-list {
+    left: -256px;
+  }
+
+.upper-skills-list li {
+    color: #F0F0F0;
+}
+  
+  .lower-skills-list {
+    transform: rotate(2deg);
+    background-color: #2A2D32;
+  }  
+
+.lower-skills-list li {
+    color: #14C57C;
+}
+
+.upper-skills-list li::after {
+    content: '•';
+    margin-left: 16px;
+    color: #14C57C;
+  }
+  
+  .lower-skills-list li::after {
+    content: '•';
+    margin-left: 16px;
+    color: #F0F0F0;
+  }
+  
+  
+  .skills-list li {
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 0.5px;
+  }
+  
