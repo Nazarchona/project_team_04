@@ -30,10 +30,19 @@
         </li>
       </ul>
     </div>
-    <form class="form">
-      <input class="form-email" type="text" name="email" id="email" placeholder="Your email*" pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" />
+    <form class="form" id="form">
+      <input class="form-email" type="email" name="email" id="email" placeholder="Your email*" pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" />
       <textarea class="form-message" name="message" id="message" placeholder="Message"></textarea>
       <button class="form-btn">Send message</button>
     </form>
+  </div>
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal-window">
+      <svg class="modal-close-icon" width="24" height="24">
+        <use href="./img/svg/icons.svg#icon-close"></use>
+      </svg>
+      <p class="modal-title">Thank you for your interest in cooperation!</p>
+      <p class="modal-description">The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.</p>
+    </div>
   </div>
 </section>
