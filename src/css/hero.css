@@ -304,7 +304,8 @@ transition: background-color 0.2s var(--hover-effect);
     max-width: 100%; 
     text-align: left;
     padding-right: 20px;
-  }  
+  }
+  
 }
 
 @media screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2),
