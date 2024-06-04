@@ -4,4 +4,3 @@ const text = document.getElementById('text-btn-hero');
         moveButton.addEventListener('click', () => {
           moveButton.classList.toggle('active');
         });
-
