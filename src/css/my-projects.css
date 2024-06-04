@@ -21,7 +21,6 @@
   align-items: center;
   gap: 40px;
   width: 100%;
-  padding: 0 20px;
 }
 
 .projects-title {
@@ -41,7 +40,7 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-  width: 320px;
+  width: 280px;
 }
 
 .projects-list-item:not(:last-child) {
@@ -49,7 +48,7 @@
 }
 
 .proj-wrap-img {
-  width: 320px;
+  width: 280px;
 }
 
 .proj-item-imgs {
@@ -69,7 +68,7 @@
 }
 
 .proj-wrap-descr {
-  width: 320px;
+  width: 280px;
 }
 
 .proj-descr-title {
