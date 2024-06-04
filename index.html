@@ -11,9 +11,9 @@
     />
     
     <script type="module" crossorigin src="/project_team_04/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/project_team_04/assets/vendor-39ba868b.js">
+    <link rel="modulepreload" crossorigin href="/project_team_04/assets/vendor-0f03d14c.js">
     <link rel="stylesheet" href="/project_team_04/assets/vendor-827d51bf.css">
-    <link rel="stylesheet" href="/project_team_04/assets/index-a300aa1e.css">
+    <link rel="stylesheet" href="/project_team_04/assets/index-e6ca13b8.css">
   </head>
   <body>
     <header class="header">
@@ -455,11 +455,20 @@
         </li>
       </ul>
     </div>
-    <form class="form">
-      <input class="form-email" type="text" name="email" id="email" placeholder="Your email*" pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" />
+    <form class="form" id="form">
+      <input class="form-email" type="email" name="email" id="email" placeholder="Your email*" pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" />
       <textarea class="form-message" name="message" id="message" placeholder="Message"></textarea>
       <button class="form-btn">Send message</button>
     </form>
+  </div>
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal-window">
+      <svg class="modal-close-icon" width="24" height="24">
+        <use href="/project_team_04/assets/icons-969eb564.svg#icon-close"></use>
+      </svg>
+      <p class="modal-title">Thank you for your interest in cooperation!</p>
+      <p class="modal-description">The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.</p>
+    </div>
   </div>
 </section>
 
