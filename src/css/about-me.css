@@ -66,12 +66,12 @@
   margin-bottom: 12px;
 }
 
-ul {
+.about-me-info-list {
   list-style: none;
   padding: 0;
 }
 
-ul li::before {
+.about-me-info-list::before {
   content: '• ';
   color: #14c57c; /* Bullet point color */
   font-weight: bold;
