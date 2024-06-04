@@ -40,7 +40,7 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-  max-width: 320px;
+  width: 320px;
 }
 
 .projects-list-item:not(:last-child) {
@@ -48,7 +48,7 @@
 }
 
 .proj-wrap-img {
-  max-width: 320px;
+  width: 320px;
 }
 
 .proj-item-imgs {
@@ -68,7 +68,7 @@
 }
 
 .proj-wrap-descr {
-  max-width: 320px;
+  width: 320px;
 }
 
 .proj-descr-title {
