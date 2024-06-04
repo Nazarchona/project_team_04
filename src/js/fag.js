@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     openOnInit: [0]
   });
 
-  // Додаємо обробник подій для забезпечення розгортання лише одного елемента
+
   document.querySelectorAll('.ac-trigger').forEach(trigger => {
     trigger.addEventListener('click', () => {
       const items = document.querySelectorAll('.ac');

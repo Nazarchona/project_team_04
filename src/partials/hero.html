@@ -1,17 +1,66 @@
-<section class="hero-section">
+tion class="hero-section" id="hero">
+  <div class="container">
     <div class="hero-container">
-        <h1 class="hero-heading">HELLO, I AM <span class="hero-highlight">FULLSTACK DEVELOPER</span></h1>
-        <button class="hero-order-project-btn" onclick="orderProject()">ORDER THE PROJECT</button>
-        <p class="hero-description-text">
-        I work with people all over the world to create <span class="hero-highlight">impressive</span> and <span class="hero-highlight">functional websites</span> that reflect each client's unique personality.
-    </p>
+      <div class="hero-first-part">
+        <h1 class="hero-heading">
+          HELLO, I AM<br>
+          <span class="hero-highlight">FULLSTACK</span><br>
+          <span class="hero-highlight">DEVELOPER</span>
+        </h1>
+  
+        <div class="container-btn-hero">
+          <button id="moveButton"></button>
+          <div id="text-btn-hero">
+            <span class="arrow">
+              <svg class="arrow-icon" width="30" height="16">
+                <use href="./img/svg/icons.svg#icon-Arrow"></use>
+              </svg>
+            </span>
+            <a class="button-text" href="#contacts">ORDER THE PROJECT</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="hero-second-part">
+        <picture class="hero-image">
+          <source
+            srcset="../img/img-hero/hero-photo-des-1x-min.jpg,
+                    ../img/img-hero/hero-photo-des-2x-min.jpg"
+            media="(min-width: 1280px)"
+            type="image/jpg"
+          />
+          <img
+            src="../img/img-hero/hero-photo-des-1x-min.jpg"
+            alt="photo-of-Lloyd-Jefferson"
+            width="108"
+            height="108"
+            class="hero-img"
+          />
+        </picture>
+  
+        <div class="hero-text-container">
+          <p class="hero-description-text">
+            I work with people all over the world to create <span class="hero-highlight">impressive</span> and <span class="hero-highlight">functional websites</span> that reflect each client's unique personality.
+          </p>
+        </div>
+      </div>
+  
+      <div class="hero-social-info">
+        <ul class="hero-social-list">
+          <li class="hero-social-item">
+            <a class="hero-social-link" href="https://www.instagram.com/goitclub/" target="_blank">Instagram</a>
+          </li>
+          <li class="hero-social-item">
+            <a class="hero-social-link" href="https://www.youtube.com/c/GoIT" target="_blank">YouTube</a>
+          </li>
+          <li class="hero-social-item">
+            <a class="hero-social-link" href="https://www.facebook.com/goITclub/" target="_blank">Facebook</a>
+          </li>
+          <li class="hero-social-item">
+            <a class="hero-social-link" href="https://nazarchona.github.io/project_team_04/" target="_blank">GitHub</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="hero-social-info">
-    <ul class="hero-social-list">
-    <li class="hero-social-item"><a class="hero-social-link" href="https://www.instagram.com/goitclub/" target="_blank">Instagram</a></li>
-    <li class="hero-social-item"><a class="hero-social-link" href="https://www.youtube.com/c/GoIT" target="_blank">YouTube</a></li>
-    <li class="hero-social-item"><a class="hero-social-link" href="https://www.facebook.com/goITclub/" target="_blank">Facebook</a></li>
-    <li class="hero-social-item"><a class="hero-social-link" href="https://nazarchona.github.io/project_team_04/" target="_blank">GitHub</a></li>         
-</ul>
-</div>
-    </section>
+  </div>
+</section>
