@@ -1,10 +1,35 @@
-import '../img/img_projects/02_green/green_desc@1x.jpg';
-import '../img/img_projects/02_green/green_desc@2x.jpg';
-import '../img/img_projects/02_green/green_mob@1x.jpg';
-import '../img/img_projects/02_green/green_mob@2x.jpg';
-import '../img/img_projects/02_green/green_tab@1x.jpg';
-import '../img/img_projects/02_green/green_tab@2x.jpg';
-import '../img/svg/icons.svg#icon-Visit_arrow';
+const imagesWalletPaths = import.meta.glob(
+  '../img/img_projects/01_wallet//*.jpg'
+);
+const imagesGreenPaths = import.meta.glob(
+  '../img/img_projects/02_green//*.jpg'
+);
+const imagesEnglishPaths = import.meta.glob(
+  '../img/img_projects/03_english//*.jpg'
+);
+const imagesPowerPaths = import.meta.glob(
+  '../img/img_projects/04_power//*.jpg'
+);
+const imagesMiminoPaths = import.meta.glob(
+  '../img/img_projects/05_mimino//*.jpg'
+);
+const imagesVyshyvankaPaths = import.meta.glob(
+  '../img/img_projects/06_vyshyvanka//*.jpg'
+);
+const imagesChegoPaths = import.meta.glob(
+  '../img/img_projects/07_chego//*.jpg'
+);
+const imagesEnergyPaths = import.meta.glob(
+  '../img/img_projects/08_energy//*.jpg'
+);
+const imagesFruitboxPaths = import.meta.glob(
+  '../img/img_projects/09_fruitbox//*.jpg'
+);
+const imagesStarlightPaths = import.meta.glob(
+  '../img/img_projects/10_starlight//*.jpg'
+);
+
+const iconsPaths = import.meta.glob('../img/svg//*.svg');
 
 const images = [
   {
@@ -163,7 +188,7 @@ function createMarkup(images, minId, maxId) {
             <a class='proj-descr-link' href='${projectLink}' target="_blank">
               visit
               <svg class='proj-link-svg' width='24' height='24'>
-                <use href="./img/svg/icons.svg#icon-Visit_arrow"></use>
+                <use href="../img/svg/icons.svg#icon-Visit_arrow"></use>
               </svg>
             </a>
           </div>
