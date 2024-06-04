@@ -23,7 +23,7 @@ const imagesStarlightPaths = import.meta.glob(
   './img/img_projects/10_starlight//*.jpg'
 );
 
-const iconsPaths = import.meta.glob('../img/svg//*.svg');
+const iconsPath = import.meta.glob('./img/svg/icons.svg#icon-Visit_arrow');
 
 const images = [
   {
@@ -182,7 +182,7 @@ function createMarkup(images, minId, maxId) {
             <a class='proj-descr-link' href='${projectLink}' target="_blank">
               visit
               <svg class='proj-link-svg' width='24' height='24'>
-                <use href="./img/svg/icons.svg#icon-Visit_arrow"></use>
+                <use href="${iconsPath}"></use>
               </svg>
             </a>
           </div>
