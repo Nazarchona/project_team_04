@@ -1,6 +1,6 @@
-const text = document.getElementById('container-btn-hero');
+const text = document.getElementById('text-btn-hero');
 const moveButton = document.getElementById('moveButton');
     
-moveButton.addEventListener('click', () => {
-moveButton.classList.toggle('active');
-});
+        moveButton.addEventListener('click', () => {
+          moveButton.classList.toggle('active');
+        });
