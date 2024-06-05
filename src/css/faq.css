@@ -126,6 +126,15 @@ span {
     padding-bottom: 610px;
   }
 
+  .ac .ac-trigger::after {
+    background-image: url(../img/faq-section/icon-up-faq.svg);
+  }
+
+  .ac.is-active>.ac-header .ac-trigger::after {
+  content: "";
+  background-image: url(../img/faq-section/icon-down-faq.svg);
+  }
+
   .accordion-container-faq{
     display: flex;
     flex-direction: column;
