@@ -20,13 +20,13 @@
 }
 
 .skills-list {
+  width: 850px;
   display: flex;
   gap: 12px;
   padding-top: 32px;
   padding-bottom: 32px;
   margin: 0;
   text-transform: uppercase;
-  overflow: hidden;
   justify-content: center;
 }
 
@@ -68,6 +68,16 @@
 }
 
 .skills-list {
-  animation: textAnimation 10s linear infinite;
+  animation: textAnimation 8s linear infinite;
   position: relative;
+}
+
+@media screen and (min-width: 1280px) {
+  .skills-list {
+  width: 1600px;
+  }
+
+  .skills-list {
+  animation: textAnimation 10s linear infinite;
+}
 }
