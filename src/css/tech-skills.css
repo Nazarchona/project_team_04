@@ -52,6 +52,10 @@
   color: #f0f0f0;
 }
 
+.anim {
+  overflow: hidden;
+}
+
 /* animation  */
 
 @keyframes textAnimation {
