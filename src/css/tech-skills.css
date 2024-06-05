@@ -1,51 +1,69 @@
 /* Section tech skills */
 
 .tech-skills {
-    white-space: nowrap;
-    margin-top: 164px;
-  }
-  
-  .skills-list {
-    display: flex;
-    gap: 12px;
-    width: 100%;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    margin: 0;
-    background-color: #214136;
-    text-transform: uppercase;
-    overflow: hidden;
-    justify-content: center;
-  }
-  
-  .upper-skills-list {
-    position: relative; 
-    z-index: 2; 
-  }
+  white-space: nowrap;
+  margin-top: 164px;
+}
+
+.upper {
+  background-color: #214136;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.lower {
+  transform: rotate(2deg);
+  background-color: #2a2d32;
+  position: relative;
+  z-index: 1;
+}
+
+.skills-list {
+  display: flex;
+  gap: 12px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin: 0;
+  text-transform: uppercase;
+  overflow: hidden;
+  justify-content: center;
+}
+
 
 .upper-skills-list li {
-    color: #F0F0F0;
+  color: #f0f0f0;
 }
-  
-  .lower-skills-list {
-    transform: rotate(2deg);
-    background-color: #2A2D32;
-    position: relative; 
-    z-index: 1; 
-  }  
+
 
 .lower-skills-list li {
-    color: #14C57C;
+  color: #14c57c;
 }
 
 .upper-skills-list li::after {
-    content: '•';
-    margin-left: 16px;
-    color: #14C57C;
+  content: '•';
+  margin-left: 16px;
+  color: #14c57c;
+}
+
+.lower-skills-list li::after {
+  content: '•';
+  margin-left: 16px;
+  color: #f0f0f0;
+}
+
+/* animation  */
+
+@keyframes textAnimation {
+  0% {
+    transform: translateX(100%);
   }
-  
-  .lower-skills-list li::after {
-    content: '•';
-    margin-left: 16px;
-    color: #F0F0F0;
+  100% {
+    transform: translateX(-100%);
   }
+}
+
+.skills-list {
+  animation: textAnimation 10s linear infinite;
+  position: relative;
+}
