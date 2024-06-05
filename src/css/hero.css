@@ -105,6 +105,18 @@ padding: 32px 0;
   text-align: left;
 }
 
+.hero-social-link{
+  transition: color 0.3s ease;
+}
+
+.hero-social-link:hover{
+  color: #14c57c;
+}
+
+.hero-social-link:focus{
+  color: #14c57c;
+}
+
 /* ---------------Медіа-запити----------------- */
 @media screen and (min-width: 320px) and (max-width: 360px) {
   .hero-heading{
