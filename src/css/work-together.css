@@ -94,7 +94,6 @@
   background-color: #2a2d32;
 
   font-weight: 300;
-  line-height: 1.5;
   letter-spacing: 0.03em;
   color: #f0f0f0;
 }
@@ -325,4 +324,26 @@
 
 .no-scroll {
   overflow: hidden;
+}
+
+/* Email error */
+
+.email-wrapper {
+  position: relative;
+}
+
+.invalid input {
+  color: #f05748;
+  border: 1px solid #f05748;
+  position: relative;
+}
+
+.invalid::after {
+  content: 'Invalid name, try again';
+  color: #f05748;
+  font-size: 12px;
+  position: absolute;
+  z-index: 999;
+  bottom: -24px;
+  left: 0;
 }
