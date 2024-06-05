@@ -1,15 +1,15 @@
 export function showModal() {
   const overlay = document.getElementById('modal-overlay');
-  const body = document.querySelector('body');
+  const noScroll = document.querySelector('html');
 
-  body.classList.add('no-scroll');
+  noScroll.classList.add('no-scroll');
   overlay.classList.add('is-open');
 }
 
 export function hideModal() {
   const overlay = document.getElementById('modal-overlay');
-  const body = document.querySelector('body');
+  const noScroll = document.querySelector('html');
 
-  body.classList.remove('no-scroll');
+  noScroll.classList.remove('no-scroll');
   overlay.classList.remove('is-open');
 }
