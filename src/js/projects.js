@@ -253,4 +253,9 @@ function clearElements(event) {
   maxId = 3;
   renderMarkup();
   clearBtn.classList.add('is-hidden');
+  scrollToProjects();
+}
+
+function scrollToProjects() {
+  document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
 }
