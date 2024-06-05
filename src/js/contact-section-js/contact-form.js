@@ -3,20 +3,32 @@ import { showModal, hideModal } from './modal-toggle';
 
 const form = document.getElementById('form');
 const emailInput = document.getElementById('email');
+const emailWrapper = emailInput.parentElement;
 const messageInput = document.getElementById('message');
+
+const validateEmail = () => {
+  const userEmail = emailInput.value;
+
+  if (!userEmail || !userEmail.includes('@') || userEmail.indexOf('@') === userEmail.length - 1) {
+    console.log('Email is invalid.');
+    emailWrapper.classList.add('invalid');
+    return false;
+  } else {
+    console.log('Email is valid.');
+    emailWrapper.classList.remove('invalid');
+    return true;
+  }
+};
 
 form.addEventListener('submit', async function (event) {
   event.preventDefault();
 
+  if (!validateEmail()) {
+    return;
+  }
+
   const userEmail = emailInput.value;
   const userMessage = messageInput.value;
-
-  if (!emailInput.checkValidity()) {
-    event.preventDefault();
-    emailInput.classList.add('invalid');
-  } else {
-    emailInput.classList.remove('invalid');
-  }
 
   if (!userEmail.trim()) {
     alert('please fill in the email field.');
@@ -32,6 +44,7 @@ form.addEventListener('submit', async function (event) {
     const response = await axios.post('https://portfolio-js.b.goit.study/api/requests', requestData);
     if (response.status === 201) {
       showModal();
+      form.reset();
     } else {
       alert('There was an error processing your request. Please try again later.');
     }
@@ -41,7 +54,15 @@ form.addEventListener('submit', async function (event) {
 });
 
 emailInput.addEventListener('input', function () {
-  emailInput.classList.remove('invalid');
+  emailWrapper.classList.remove('invalid');
+});
+
+emailInput.addEventListener('focus', function () {
+  emailWrapper.classList.remove('invalid');
+});
+
+emailInput.addEventListener('blur', function () {
+  validateEmail();
 });
 
 const closeModalButton = document.querySelector('.modal-close-icon');
