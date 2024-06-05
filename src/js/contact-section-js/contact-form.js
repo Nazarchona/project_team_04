@@ -9,12 +9,14 @@ const messageInput = document.getElementById('message');
 const validateEmail = () => {
   const userEmail = emailInput.value;
 
-  if (!userEmail || !userEmail.includes('@') || userEmail.indexOf('@') === userEmail.length - 1) {
-    console.log('Email is invalid.');
+  if (
+    !userEmail ||
+    !userEmail.includes('@') ||
+    userEmail.indexOf('@') === userEmail.length - 1
+  ) {
     emailWrapper.classList.add('invalid');
     return false;
   } else {
-    console.log('Email is valid.');
     emailWrapper.classList.remove('invalid');
     return true;
   }
@@ -27,13 +29,8 @@ form.addEventListener('submit', async function (event) {
     return;
   }
 
-  const userEmail = emailInput.value;
+  const userEmail = emailInput.value.replace(/\s+/g, '');
   const userMessage = messageInput.value;
-
-  if (!userEmail.trim()) {
-    alert('please fill in the email field.');
-    return;
-  }
 
   const requestData = { email: userEmail };
   if (userMessage) {
@@ -41,12 +38,17 @@ form.addEventListener('submit', async function (event) {
   }
 
   try {
-    const response = await axios.post('https://portfolio-js.b.goit.study/api/requests', requestData);
+    const response = await axios.post(
+      'https://portfolio-js.b.goit.study/api/requests',
+      requestData
+    );
     if (response.status === 201) {
       showModal();
       form.reset();
     } else {
-      alert('There was an error processing your request. Please try again later.');
+      alert(
+        'There was an error processing your request. Please try again later.'
+      );
     }
   } catch (error) {
     console.error(error);
